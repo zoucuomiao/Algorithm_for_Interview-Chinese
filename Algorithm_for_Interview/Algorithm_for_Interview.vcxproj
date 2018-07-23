@@ -129,7 +129,7 @@
     <ClInclude Include="_utils工具函数\遍历所有正因子.hpp" />
     <ClInclude Include="_必背算法\atoi.hpp" />
     <ClInclude Include="_必背算法\dp-01背包.hpp" />
-    <ClInclude Include="_必背算法\二分查找模板-最优解.hpp" />
+    <ClInclude Include="_必背算法\二分查找最优解模板.hpp" />
     <ClInclude Include="_必背算法\二分查找模板.hpp" />
     <ClInclude Include="_必背算法\排序-堆排序.hpp" />
     <ClInclude Include="_必背算法\排序-归并排序.hpp" />
