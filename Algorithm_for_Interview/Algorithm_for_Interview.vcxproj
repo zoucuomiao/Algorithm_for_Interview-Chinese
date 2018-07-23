@@ -192,11 +192,9 @@
     <ClInclude Include="字符串\正则表达式匹配.hpp" />
     <ClInclude Include="字符串\第一次只出现一次的字符.hpp" />
     <ClInclude Include="test.hpp" />
-    <ClInclude Include="_utils工具函数\二分查找模板-最优解.hpp" />
-    <ClInclude Include="_utils工具函数\二分查找模板.hpp" />
     <ClInclude Include="查找与排序\暴力搜索_二维数组中查找.hpp" />
     <ClInclude Include="查找与排序\暴力搜索_数组中重复的数.hpp" />
-    <ClInclude Include="查找与排序\二分查找_旋转数组中的最小数字.hpp" />
+    <ClInclude Include="二分查找\旋转数组中的最小数字.hpp" />
     <ClInclude Include="查找与排序\二分查找_数字在排序数组中出现的次数.hpp" />
     <ClInclude Include="查找与排序\双指针_和为S的两个数.hpp" />
     <ClInclude Include="查找与排序\暴力搜索_和为S的连续正数序列.hpp" />

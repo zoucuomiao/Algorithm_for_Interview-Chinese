@@ -141,9 +141,6 @@
     <ClInclude Include="查找与排序\二分查找_数字在排序数组中出现的次数.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="查找与排序\二分查找_旋转数组中的最小数字.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="查找与排序\双指针_和为S的两个数.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -249,12 +246,6 @@
     <ClInclude Include="_utils工具函数\遍历所有子集.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="_utils工具函数\二分查找模板.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="_utils工具函数\二分查找模板-最优解.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="_utils工具函数\位运算.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -322,6 +313,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="_必背算法\二分查找最优解模板.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="二分查找\旋转数组中的最小数字.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
