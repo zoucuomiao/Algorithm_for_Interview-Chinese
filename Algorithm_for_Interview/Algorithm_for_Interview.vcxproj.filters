@@ -318,6 +318,9 @@
     <ClInclude Include="二分查找\旋转数组中的最小数字.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="二分查找\旋转数组中查找目标值.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
