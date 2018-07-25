@@ -8,14 +8,9 @@
 
 时间限制：1秒 空间限制：32768K 热度指数：197271
 
-解题思路：
-    虽然存在各种“乱七八糟”的解法（特别用 Python 时）
-
-知识点：
+思路：
     补码
 
-提交记录：
-    位运算是我的弱项
 */
 #pragma once
 
@@ -25,12 +20,25 @@
 
 class Solution {
 public:
+    // 更快的方法
     int NumberOf1(int n) {
         int cnt = 0;
 
         while (n != 0) {
             cnt++;
             n = n & (n - 1);
+        }
+
+        return cnt;
+    }
+
+    // 直观的方法
+    int NumberOf1_2(int n) {
+        int cnt = 0;
+
+        while (n != 0) {
+            if (n & 1) cnt += 1;
+            n >>= 1;
         }
 
         return cnt;

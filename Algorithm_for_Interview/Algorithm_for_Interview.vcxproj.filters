@@ -321,6 +321,15 @@
     <ClInclude Include="二分查找\旋转数组中查找目标值.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="动态规划\Bit位计数.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="位运算\颠倒二进制位.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="_笔试\阿里-在线编程\接力赛最短路径.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

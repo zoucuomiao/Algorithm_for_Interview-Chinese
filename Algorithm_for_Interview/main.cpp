@@ -7,13 +7,15 @@
 //#include "_必背算法\atoi.hpp"
 //#include "_必背算法\排序-桶排序.hpp"
 //#include "_笔试\拼多多/1.数组中的最长山谷.hpp"
-#include "二分查找/旋转数组中查找目标值.hpp"
+//#include "二分查找/旋转数组中查找目标值.hpp"
+#include "_笔试\阿里-在线编程\1.hpp"
 
 using namespace std;
   
 int main() {
 
-    solve();
+    //solve();
+    _main();
 
     cout << endl;
     system("PAUSE");

@@ -140,10 +140,13 @@
     <ClInclude Include="_笔试\拼多多180722\2.字符串构造.py" />
     <ClInclude Include="_笔试\拼多多180722\3.到达指定位置.hpp" />
     <ClInclude Include="_笔试\拼多多180722\4.靓号.hpp" />
+    <ClInclude Include="_笔试\阿里-在线编程\接力赛最短路径.hpp" />
     <ClInclude Include="二分查找\旋转数组中查找目标值.hpp" />
     <ClInclude Include="二叉树\二叉树的坡度.hpp" />
     <ClInclude Include="二叉树\二叉树的直径.hpp" />
     <ClInclude Include="二叉树\把二叉搜索树转换为累加树.hpp" />
+    <ClInclude Include="位运算\颠倒二进制位.hpp" />
+    <ClInclude Include="动态规划\Bit位计数.hpp" />
     <ClInclude Include="动态规划\最长回文子串.hpp" />
     <ClInclude Include="动态规划\最长回文子序列.hpp" />
     <ClInclude Include="动态规划\股票最大收益.hpp" />
