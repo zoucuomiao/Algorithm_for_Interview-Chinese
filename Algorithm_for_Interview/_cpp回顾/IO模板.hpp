@@ -90,7 +90,7 @@ public:
         gets(buff);  // VS 2017 中找不到此函数
         // C++
         cin.getline(buff, MAXN);  // 第三个参数默认是 '\n'
-        cin.getline(buff, MAXN, '\n');  // 第三个参数默认是 '\n'
+        cin.getline(buff, MAXN, '\n');
         
         // 2）用 string 接收
         string s;

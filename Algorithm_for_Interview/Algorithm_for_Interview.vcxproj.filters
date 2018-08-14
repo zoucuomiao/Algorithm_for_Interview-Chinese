@@ -330,6 +330,12 @@
     <ClInclude Include="_笔试\阿里-在线编程\接力赛最短路径.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="数学\反转整数.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="深度优先搜索\序列化二叉树.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

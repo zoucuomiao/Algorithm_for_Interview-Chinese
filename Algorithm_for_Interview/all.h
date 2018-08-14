@@ -3,7 +3,8 @@
 
 #include <cassert>
 #include <cstdio>
-#include <stdio.h>
+#include <cstdlib>
+#include <ctime>
 #include <cstring>
 #include <iostream>
 #include <fstream>

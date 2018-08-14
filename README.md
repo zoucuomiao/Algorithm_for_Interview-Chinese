@@ -1,4 +1,14 @@
-## 面试算法/数据结构笔记
+面试算法/数据结构笔记
+===
+
+说明
+---
+- 秋招紧迫，已经没有时间一道道题整理了，因此本仓库已经暂停更新
+- 为了方便浏览，新的问题将直接把**思路**和**代码**贴在该仓库的[**算法**](https://github.com/imhuay/Interview_Notes-Chinese/tree/master/算法)一栏中
+  - [题解-剑指Offer.md](https://github.com/imhuay/Interview_Notes-Chinese/blob/master/算法/题解-剑指Offer.md)
+  - [题解-LeetCode.md](https://github.com/imhuay/Interview_Notes-Chinese/blob/master/算法/题解-LeetCode.md)
+  - [专题-动态规划.md](https://github.com/imhuay/Interview_Notes-Chinese/blob/master/算法/专题-动态规划.md)
+  - ...
 
 ### RoadMap
 - [_笔试](./Algorithm_for_Interview/_笔试)

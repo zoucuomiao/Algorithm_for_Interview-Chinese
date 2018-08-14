@@ -3,6 +3,7 @@ atoi() 的功能:
     将字符串（C风格）转换成整型；
     atoi() 会跳过前面的空格字符，直到遇上数字或正负号才开始做转换，
     而再遇到 非数字 或 结束符('\0') 时结束转化，并将结果返回（返回转换后的整型数）
+    如果发生溢出，则输出 INT_MAX 或 INT_MIN;
     *内置 atoi 不会处理 NULL 指针
     
     合法样例：
@@ -22,6 +23,8 @@ OJ:
         ret = ret * 10 + (*p - '0');
         p++;
     }
+
+    溢出处理
 
 */
 #pragma once
@@ -44,12 +47,20 @@ int atoi_my(const char* const cs) {
     // 首个非空字符不是数字，注意与判断正负的顺序
     // if (*p < '0' && *p > '9') return 0;       // 不需要
 
-    // 循环转换整数（核心代码）
+    // 循环转换整数（核心代码）加入溢出判断
     while (*p >= '0' && *p <= '9') {
-        ret = ret * 10 + (*p - '0');
+        int new_ret = ret * 10 + (*p - '0');
+        if (new_ret / 10 != ret) {
+            return sign > 0 ? INT_MAX : INT_MIN;
+        }
+        ret = new_ret;
         p++;
     }
-
+    // 无溢出判断
+    /*while (*p >= '0' && *p <= '9') {
+        ret = ret * 10 + (*p - '0');
+        p++;
+    }*/
     return ret * sign;
 }
 
@@ -78,6 +89,8 @@ void solve() {
     print(atoi_my("   -a123   "));
     print(atoi_my("   a+123   "));
     print(atoi_my("   a-123   "));
+    print(atoi_my("222222222222222222222222"));
+    print(atoi_my("-222222222222222222222222"));
     print();
     const char p[] = "   123abc";
     print(atoi_my(p));

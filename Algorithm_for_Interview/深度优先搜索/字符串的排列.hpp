@@ -23,22 +23,40 @@
 #include "../all.h"
 
 class Solution {
-public:
+    string s;
+    string tmp;
+    int strlen;
     vector<string> ret;
+    vector<int> book;
 
+    void dfs(int step) {
+        if (step == strlen) {
+            ret.push_back(tmp);
+            return;
+        }
+        for (int i = 0; i<strlen; i++) {
+            if (book[i] != 1) {
+                tmp[step] = s[i];
+                book[i] = 1;
+                dfs(step + 1);
+                book[i] = 0;
+            }
+
+        }
+    }
+
+public:
     vector<string> Permutation(string str) {
-        int sl = str.length();
-        char *cs = new char[sl + 1];
-        strcpy(cs, str.c_str());
-
+        s = str;
+        strlen = str.length();
+        tmp.resize(strlen, '\0');
+        book.resize(strlen, 0);
+        dfs(0);
         return ret;
     }
 
-    void dfs(char cs[]) {
-
-    }
 };
 
 void solve() {
-
+    Solution().Permutation("abc");
 }
