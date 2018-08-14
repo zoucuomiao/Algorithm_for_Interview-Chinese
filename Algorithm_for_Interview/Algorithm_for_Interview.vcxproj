@@ -125,6 +125,7 @@
     <ClInclude Include="_cpp回顾\STL容器\stack.hpp" />
     <ClInclude Include="_cpp回顾\STL容器\vector.hpp" />
     <ClInclude Include="_cpp回顾\Cpp之string专题.hpp" />
+    <ClInclude Include="_Cpp面向对象\不通过继承实现多态.hpp" />
     <ClInclude Include="_utils工具函数\位运算.hpp" />
     <ClInclude Include="_utils工具函数\遍历所有正因子.hpp" />
     <ClInclude Include="_必背算法\atoi.hpp" />
@@ -147,6 +148,7 @@
     <ClInclude Include="二叉树\把二叉搜索树转换为累加树.hpp" />
     <ClInclude Include="位运算\颠倒二进制位.hpp" />
     <ClInclude Include="动态规划\Bit位计数.hpp" />
+    <ClInclude Include="动态规划\最长递增子序列.hpp" />
     <ClInclude Include="动态规划\最长回文子串.hpp" />
     <ClInclude Include="动态规划\最长回文子序列.hpp" />
     <ClInclude Include="动态规划\股票最大收益.hpp" />

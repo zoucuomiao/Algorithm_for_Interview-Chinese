@@ -336,16 +336,22 @@
     <ClInclude Include="深度优先搜索\序列化二叉树.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
+    <ClInclude Include="_Cpp面向对象\不通过继承实现多态.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="动态规划\最长递增子序列.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md" />
     <None Include="_cpp回顾\Cpp之STL容器.md" />
     <None Include="_cpp回顾\Cpp之常用方法.md" />
     <None Include="_cpp回顾\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
