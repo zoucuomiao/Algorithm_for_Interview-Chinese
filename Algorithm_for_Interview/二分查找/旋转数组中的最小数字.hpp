@@ -40,12 +40,11 @@ public:
 
         return nums[lo + 1];
     }
-
 };
 
 
 void solve() {
-    vector<int> nums{ 4,5,6,7,0,1,2 };
+    vector<int> nums{ 2, 1 };
     int ret = Solution().findMin(nums);
     print(ret);
 }

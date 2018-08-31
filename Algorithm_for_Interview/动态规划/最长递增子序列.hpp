@@ -5,25 +5,43 @@
 
 #include "../all.h"
 
-class AscentSequence {
+class AscentSequence1 {
 public:
     int findLongest(vector<int> nums, int n) {
         vector<int> dp(n, 1);
 
-        for (int i = 1; i < n; i++)
+        int ret = 1;
+        for (int i = 1; i < n; i++) {
             for (int j = 0; j < i; j++)
                 if (nums[i] > nums[j] && dp[i] < dp[j] + 1)
                     dp[i] = dp[j] + 1;
 
-        int ret = dp[0];
-        for (int i = 1; i < n; i++)
             ret = max(ret, dp[i]);
+        }
 
         return ret;
     }
 };
 
+class AscentSequence {
+public:
+    int findLongest(const vector<int>& nums, int n) {
+        vector<int> dp;
+
+        for (int j = 0; j < n; j++) {
+            auto it = upper_bound(dp.begin(), dp.end(), nums[j]);
+            if (it == dp.end())
+                dp.push_back(nums[j]);
+            else
+                *it = nums[j];
+        }
+
+        return dp.size();
+    }
+};
+
 void
 solve() {
-    AscentSequence().findLongest({ 203,39,186,207,83,80,89,237,247 }, 9);
+    auto ret = AscentSequence().findLongest({ 203,39,186,207,83,80,89,237,247 }, 9);
+    print(ret);
 }

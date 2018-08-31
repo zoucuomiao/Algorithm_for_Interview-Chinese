@@ -22,7 +22,7 @@
 */
 #pragma once
 
-#include "../all.h"
+#include "../binary_tree.hpp"
 
 class Solution {
 public:

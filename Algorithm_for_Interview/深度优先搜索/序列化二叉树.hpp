@@ -22,28 +22,28 @@
 
 class Solution {
     // 因为接口限制，所以需要使用了两个 ss
-    stringstream ss;
-    stringstream sd;
+    stringstream ss_fw;
+    stringstream ss_bw;
     char ret[1024];
     //char* ret;
 
     void dfs_s(TreeNode *node) {
         if (node == nullptr) {
-            ss << "#";
+            ss_fw << "#";
             return;
         }
-        ss << node->val;
-        ss << " ";
+        ss_fw << node->val;
+        ss_fw << " ";
         dfs_s(node->left);
-        ss << " ";
+        ss_fw << " ";
         dfs_s(node->right);
     }
 
     TreeNode* dfs_d() {
-        if (sd.eof())
+        if (ss_bw.eof())
             return nullptr;
         string val;            // 只能用 string 接收，用 int 或 char 都会有问题
-        sd >> val;
+        ss_bw >> val;
         if (val == "#")
             return nullptr;
         TreeNode* node = new TreeNode{ stoi(val) }; // 
@@ -57,12 +57,12 @@ public:
         dfs_s(root);
         // 这里耗了很久
         // return (char*)ss.str().c_str();  // 会出问题，原因未知
-        return strcpy(ret, ss.str().c_str());
+        return strcpy(ret, ss_fw.str().c_str());
     }
 
     TreeNode* Deserialize(char *str) {
         if (strlen(str) < 1) return nullptr;
-        sd << str;
+        ss_bw << str;
         return dfs_d();
     }
 };
