@@ -9,7 +9,7 @@
 #include <fstream>
 #include <sstream>
 
-// ÈÝÆ÷
+// å®¹å™¨
 #include <string>
 #include <vector>
 #include <deque>
@@ -37,12 +37,12 @@ print() {
     cout << endl;
 }
 
-// ³£ÁÁ
+// å¸¸é‡
 #define EPSILON     10e-5
 #define INF         0x3f3f3f3f
 #define N1000       1000
 
-// ¶þ²æÊ÷
+// äºŒå‰æ ‘
 struct TreeNode {
     int val;
     TreeNode *left;
@@ -50,7 +50,7 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-// ÏßË÷Ê÷
+// çº¿ç´¢æ ‘
 struct TreeLinkNode {
     int val;
     struct TreeLinkNode *left;
@@ -61,7 +61,7 @@ struct TreeLinkNode {
     }
 };
 
-// Á´±í
+// é“¾è¡¨
 struct ListNode {
     int val;
     struct ListNode *next;
